@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    container_name: http_api
+    image: http_api
+    restart: always
+    ports:
+      - "5001:5001"
